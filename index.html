@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="profile">
+        <img src="/img/Profile.png" alt="Johan Samuel" />
+        <p class="profile-name">Johan Samuel</p>
+        <p class="profile-position">Front Desk Officer</p>
+        <p class="profile-dept">Finance</p>
+      </div>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="list list-highlight">
+            <ion-icon class="nav-icon" name="home"></ion-icon>
+            <span>Dashboard</span>
+          </li>
+
+          <li class="list">
+            <ion-icon class="nav-icon" name="bookmark"></ion-icon>
+            <span>Documents</span>
+          </li>
+
+          <li class="list act-no">
+            <ion-icon class="nav-icon" name="notifications"></ion-icon>
+            <span>Activity</span>
+          </li>
+
+          <li class="list">
+            <ion-icon class="nav-icon" name="archive"></ion-icon>
+            <span>Archive</span>
+          </li>
+
+          <li class="list">
+            <ion-icon class="nav-icon" name="settings"></ion-icon>
+            <span>Settings</span
+            ><ion-icon class="nav-icon caret" name="caret-down"></ion-icon>
+          </li>
+
+          <li class="list log-out">
+            <ion-icon class="nav-icon" name="log-out"></ion-icon>
+            <span>Log out</span>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <header class="dash-header">Dash</header>
+    <div class="pending-docs">Pending Documents</div>
+    <div class="doc-summary">Documents Summary</div>
+    <div class="recent-docs">Recent Documents</div>
+    <div class="recent-activities">Recent Activities</div>
+    <div>Analysis</div>
+  </body>
+</html>
