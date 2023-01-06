@@ -66,11 +66,152 @@
         </ul>
       </nav>
     </aside>
-    <header class="dash-header">Dash</header>
-    <div class="pending-docs">Pending Documents</div>
-    <div class="doc-summary">Documents Summary</div>
-    <div class="recent-docs">Recent Documents</div>
-    <div class="recent-activities">Recent Activities</div>
-    <div>Analysis</div>
+
+    <div class="container grid">
+      <div class="dashboard-header">
+        <h1 class="heading-primary">Dashboard</h1>
+        <div class="dash-box">
+          <div class="dash-group">
+            <img
+              class="dash-icon"
+              src="img/Department Icon.png"
+              alt="dept icon"
+            />
+            <div class="dept-texts">
+              <p class="dept-header">Departments</p>
+              <p class="dept-subheader">5 Members</p>
+            </div>
+          </div>
+
+          <div class="dash-group">
+            <img class="dash-icon" src="img/Member Icon.png" alt="dept icon" />
+            <div class="dept-texts">
+              <p class="dept-header">Members</p>
+              <p class="dept-subheader">24 Members</p>
+            </div>
+          </div>
+
+          <div class="dash-group">
+            <img class="dash-icon" src="img/Unit Icon.png" alt="dept icon" />
+            <div class="dept-texts">
+              <p class="dept-header">Units</p>
+              <p class="dept-subheader">3 Members</p>
+            </div>
+          </div>
+
+          <div class="dash-group">
+            <img
+              class="dash-icon"
+              src="img/Document Icon.png"
+              alt="dept icon"
+            />
+            <div class="dept-texts">
+              <p class="dept-header">Documents</p>
+              <p class="dept-subheader">12,782 files</p>
+            </div>
+          </div>
+
+          <button class="btn">
+            <ion-icon class="add-icon" name="add"></ion-icon>
+            <span>New Document</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="pending-docs">
+        <div class="p-box">
+          <div class="p-header">
+            <h2 class="subheading">Pending Documents</h2>
+            <a href="#" class="view-all">View All</a>
+          </div>
+          <div class="p-table"></div>
+
+          <div class="table">
+            <p class="table-head">File Name</p>
+            <p class="table-head">Class</p>
+            <p class="table-head">Due Date</p>
+            <p class="table-head">Owner</p>
+            <p class="table-head">&nbsp;</p>
+
+            <!-- TABLE CONTENT -->
+            <p class="table-info">Application for leave</p>
+            <p class="table-info">Proposal</p>
+            <p class="table-info">12-Jan-2023</p>
+            <p class="table-info info-al">
+              <img src="img/Avatar1.png" /> <span>Olumide Michael</span>
+            </p>
+            <a href="#" class="view-all">Review</a>
+
+            <!-- ROW 2 -->
+            <p class="table-info">Application for leave</p>
+            <p class="table-info">Proposal</p>
+            <p class="table-info">12-Jan-2023</p>
+            <p class="table-info info-al">
+              <img src="img/Avatar1.png" /> <span>Segun Oni</span>
+            </p>
+            <a href="#" class="view-all">Review</a>
+
+            <!-- ROW 3 -->
+            <p class="table-info">Application for leave</p>
+            <p class="table-info">Proposal</p>
+            <p class="table-info">12-Jan-2023</p>
+            <p class="table-info info-al">
+              <img src="img/Avatar1.png" /> <span>Tony Montana</span>
+            </p>
+            <a href="#" class="view-all">Review</a>
+
+            <!-- ROW 4 -->
+            <p class="table-info">Application for leave</p>
+            <p class="table-info">Proposal</p>
+            <p class="table-info">12-Jan-2023</p>
+            <p class="table-info info-al">
+              <img src="img/Avatar1.png" /> <span>Karl Drogo</span>
+            </p>
+            <a href="#" class="view-all">Review</a>
+
+            <!-- ROW 5 -->
+            <p class="table-info">Application for leave</p>
+            <p class="table-info">Proposal</p>
+            <p class="table-info">12-Jan-2023</p>
+            <p class="table-info info-al">
+              <img src="img/Avatar1.png" /> <span>Terry Crews</span>
+            </p>
+            <a href="#" class="view-all">Review</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- DOCUMENTS SUMMARY -->
+      <div class="doc-summary">
+        <h2 class="subheading marg-b">Documents Summary</h2>
+
+        <div class="pie-container">
+          <div class="pie-chart">&nbsp;</div>
+        </div>
+
+        <div class="chart-detail-box">
+          <div class="chart-details">
+            <div class="detail-icon">&nbsp;</div>
+            <p class="detail-text">Approved</p>
+            <p class="detail-num">32</p>
+          </div>
+
+          <div class="chart-details">
+            <div class="detail-icon rejected-icon">&nbsp;</div>
+            <p class="detail-text">Rejected</p>
+            <p class="detail-num">15</p>
+          </div>
+
+          <div class="chart-details">
+            <div class="detail-icon pending-icon">&nbsp;</div>
+            <p class="detail-text">Pending</p>
+            <p class="detail-num">12</p>
+          </div>
+        </div>
+      </div>
+      <div class="recent-docs">Recent Documents</div>
+      <div class="recent-activities">Recent Activities</div>
+      <div>Analysis</div>
+    </div>
   </body>
 </html>
