@@ -23,6 +23,7 @@
     <title>Dashboard</title>
   </head>
   <body>
+    <!-- SIDEBAR -->
     <aside class="sidebar">
       <div class="profile">
         <img src="/img/Profile.png" alt="Johan Samuel" />
@@ -67,6 +68,7 @@
       </nav>
     </aside>
 
+    <!-- DASHBOARD* -->
     <div class="container grid">
       <div class="dashboard-header">
         <h1 class="heading-primary">Dashboard</h1>
@@ -99,7 +101,7 @@
             </div>
           </div>
 
-          <div class="dash-group">
+          <div class="dash-group last-dash">
             <img
               class="dash-icon"
               src="img/Document Icon.png"
@@ -118,6 +120,7 @@
         </div>
       </div>
 
+      <!-- PENDING DOCUMENTS -->
       <div class="pending-docs">
         <div class="p-box">
           <div class="p-header">
@@ -293,7 +296,62 @@
         </div>
       </div>
 
-      <div>Analysis</div>
+      <!-- ANALYSIS SECTION********************** -->
+
+      <div class="analysis-section">
+        <div class="analysis-heading">
+          <h2 class="subheading">Analysis</h2>
+          <select class="doc-selection">
+            <option class="doc-option">Document flow by dept</option>
+            <option class="doc-option">Document flow by ...</option>
+          </select>
+        </div>
+
+        <div class="bar-chart-flex">
+          <div class="bar-chart-div">
+            <div class="bar-chart">
+              <div class="bar-one acc-one">&nbsp;</div>
+              <div class="bar-two acc-two">&nbsp;</div>
+              <p class="bar-name">Acc</p>
+            </div>
+          </div>
+
+          <div class="bar-chart-div">
+            <div class="bar-chart">
+              <div class="bar-one hr-one">&nbsp;</div>
+              <div class="bar-two hr-two">&nbsp;</div>
+              <p class="bar-name">HR</p>
+            </div>
+          </div>
+
+          <div class="bar-chart-div">
+            <div class="bar-chart">
+              <div class="bar-one fin-one">&nbsp;</div>
+              <div class="bar-two fin-two">&nbsp;</div>
+              <p class="bar-name">Fin.</p>
+            </div>
+          </div>
+
+          <div class="bar-chart-div">
+            <div class="bar-chart">
+              <div class="bar-one media-one">&nbsp;</div>
+              <div class="bar-two media-two">&nbsp;</div>
+              <p class="bar-name">Media</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="color-box-div">
+          <div class="info-div">
+            <div class="colored-box approved">&nbsp;</div>
+            <p class="analysis-text">Approved</p>
+          </div>
+          <div class="info-div">
+            <div class="colored-box pending">&nbsp;</div>
+            <p class="analysis-text">Pending</p>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

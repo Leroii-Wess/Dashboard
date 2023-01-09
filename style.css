@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+*:focus {
+  outline: none;
+}
+
 html {
   font-family: "poppins", sans-serif;
 }
@@ -24,7 +28,7 @@ body {
 /* SIDEBAR**************** */
 .sidebar {
   grid-row: 1 / -1;
-  height: 100vh;
+  height: auto;
   max-width: 100%;
   background-color: #fff;
   box-shadow: 4px 0px 24px #e3e3e3;
@@ -78,6 +82,16 @@ body {
 .list-highlight {
   color: #43536f;
   font-weight: 700;
+  position: relative;
+}
+
+.list-highlight::after {
+  content: "";
+  position: absolute;
+  border-left: 5px solid #0c66ff;
+  border-radius: 3px;
+  height: 2rem;
+  left: -17%;
 }
 
 .list:last-child {
@@ -133,13 +147,26 @@ body {
 
 .dash-box {
   display: flex;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .dash-group {
   display: flex;
   gap: 1rem;
   align-items: center;
+  position: relative;
+}
+
+.dash-group::after {
+  content: "";
+  border-right: 0.5px solid #a6aebc;
+  position: absolute;
+  height: 3rem;
+  right: -40%;
+}
+
+.last-dash::after {
+  border-right: 0.5px solid transparent;
 }
 
 .dash-icon {
@@ -216,10 +243,10 @@ body {
   content: "";
   position: absolute;
   border-bottom: 3px solid #0c66ff;
-  width: 20%;
+  width: 3rem;
   left: 0;
   bottom: -5px;
-  border-radius: 2px;
+  border-radius: 5px;
 }
 
 .view-all {
@@ -519,4 +546,143 @@ strong {
 .activity-text {
   color: #8a94a6;
   font-size: 0.7rem;
+}
+
+/* ANALYSIS******************* */
+.analysis-section {
+  padding: 2rem;
+  background: #ffffff;
+  box-shadow: 0px 2px 24px #f1f2f4;
+  position: relative;
+}
+
+.analysis-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.doc-selection {
+  padding: 0.5rem;
+  font-size: 0.7rem;
+  border: 0.5px solid #ced8e7;
+  border-radius: 3px;
+  font-family: inherit;
+}
+
+.doc-selection {
+  padding: 0.5rem;
+  font-size: 0.7rem;
+}
+
+/* BAR CHART */
+.bar-chart-flex {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.bar-chart {
+  height: 12rem;
+  width: 3rem;
+  position: relative;
+}
+
+.bar-chart::after {
+  content: "";
+  position: absolute;
+  border-bottom: 0.5px solid #ecf1f8;
+  width: 70%;
+  bottom: 15%;
+  left: 10%;
+}
+
+.bar-one {
+  width: 1rem;
+  background-color: #e1eaf5;
+  position: absolute;
+  bottom: 20%;
+  left: 20%;
+}
+
+.bar-two {
+  width: 1rem;
+  position: absolute;
+  background-color: #82b1ed;
+  bottom: 20%;
+  left: 35%;
+}
+
+/* ACC  Chart*/
+.acc-one {
+  height: 2rem;
+}
+
+.acc-two {
+  height: 4rem;
+}
+
+/* HR Chart */
+.hr-one {
+  height: 4.5rem;
+}
+
+.hr-two {
+  height: 2.5rem;
+}
+
+/* FIN Chart */
+.fin-one {
+  height: 3.8rem;
+}
+
+.fin-two {
+  height: 6rem;
+}
+
+/* MEDIA Chart */
+.media-one {
+  height: 7rem;
+}
+
+.media-two {
+  height: 6rem;
+}
+
+.bar-name {
+  font-size: 0.6rem;
+  color: #53627c;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.color-box-div {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  gap: 3rem;
+}
+
+.info-div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.colored-box {
+  height: 1rem;
+  width: 1rem;
+  border-radius: 4px;
+}
+
+.approved {
+  background-color: #82b1ed;
+}
+
+.pending {
+  background-color: #e1eaf5;
 }
